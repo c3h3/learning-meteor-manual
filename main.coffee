@@ -14,3 +14,9 @@
 @handle = Deps.autorun ()->
   console.log "Your favorite food is " + getFavoriteFood() 
 
+
+@getReversedFood = -> 
+  getFavoriteFood().split("").reverse().join("");
+
+@handle2 = Deps.autorun ->
+  console.log "Your favorite food is " + getReversedFood() + " when reversed"
