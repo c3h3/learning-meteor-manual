@@ -27,3 +27,11 @@
 forecasts.set "san-francisco", "cloudy"
 forecasts.get "san-francisco"
 
+# In Browser Console:
+#
+# $('body').html("The weather here is <span class='forecast'></span>!");
+# Deps.autorun(function () {
+#   $('.forecast').text(forecasts.get('san-francisco'));
+# });
+
+
