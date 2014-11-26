@@ -20,3 +20,10 @@
 
 @handle2 = Deps.autorun ->
   console.log "Your favorite food is " + getReversedFood() + " when reversed"
+
+
+@forecasts = new ReactiveDict
+
+forecasts.set "san-francisco", "cloudy"
+forecasts.get "san-francisco"
+
