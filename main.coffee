@@ -27,6 +27,10 @@
 forecasts.set "san-francisco", "cloudy"
 forecasts.get "san-francisco"
 
+if Meteor.isClient
+  Template.weather.forecast = ->
+    forecasts.get "san-francisco"
+
 # In Browser Console:
 #
 # $('body').html("The weather here is <span class='forecast'></span>!");

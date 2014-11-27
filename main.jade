@@ -3,4 +3,7 @@ head
 
 body
   h2 Learning Metoer Manual
-  span.forecast
+  +weather
+
+template(name="weather")
+  h2 The weather here is {{forecast}}!
